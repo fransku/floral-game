@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gameManager1 : MonoBehaviour {
-    public int score; 
+public class hover : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
-        score = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+        if (flowerTextControl.textstatus == "off")
+        {
+            Destroy(gameObject);
+        }
 	}
 }
