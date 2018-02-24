@@ -7,7 +7,7 @@ public class VaseBehaviour : MonoBehaviour {
     private const string FLOWER_PREFIX = "Flower";
 
     /*// Use this for initialization
-	void Start () {
+	void Start () { 
 		
 	}
 	
@@ -15,7 +15,7 @@ public class VaseBehaviour : MonoBehaviour {
 	void Update () {
 		
 	}*/
-
+   
     private void OnTriggerEnter2D(Collider2D _flowerCollider)
     {
         if (_flowerCollider.tag == FLOWER_PREFIX)

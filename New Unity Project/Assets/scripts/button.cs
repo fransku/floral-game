@@ -4,11 +4,24 @@ using UnityEngine;
 
 public class button : MonoBehaviour
 {
-    public MouseControl mouseControl;
-    public GameObject flower1;
-    public GameObject flower2;
+    public static GameManager manager;
 
+    public MouseControl mouseControl;
+    public GameObject flowerAST;
+    public GameObject flowerROSE;
+    public GameObject flowerBIRD;
+    public GameObject flowerCAR;
+    public GameObject flowerSTAT;
+    public GameObject flowerSF;
+    public GameObject flowerDAF;
+    //colum 2
+    public GameObject flowerOR;
+    public GameObject flowerGAR;
+    public GameObject flowerHTH;
+    public GameObject flowerHYD;
+    public GameObject flowerPEO;
     private Vector3 screenPoint;
+  
 
     void InstantiateFlower(GameObject flowerPrefab)
     {
@@ -19,21 +32,81 @@ public class button : MonoBehaviour
         GameObject flower = GameObject.Instantiate(flowerPrefab, screenPoint, Quaternion.identity) as GameObject;
         mouseControl.dragFlower = flower;
     }
-
+    //first column
     public void OnclickAST()
     {
-        InstantiateFlower(flower2);
-
+        InstantiateFlower(flowerAST);
+         if (GameManager.manager.level == 1) {
+        GameManager.manager.score += 0;
+        }
+    }
+    public void OnclickBIRD()
+    {
+        InstantiateFlower(flowerBIRD);
+        if (GameManager.manager.level == 1)
+        {
+            GameManager.manager.score += 1;
+            GameData.gameScore = GameManager.manager.score;
+        }
+    }
+    public void OnclickCAR()
+    {
+        InstantiateFlower(flowerCAR);
+    }
+    public void OnclickSTAT()
+    {
+        InstantiateFlower(flowerSTAT);
+        if (GameManager.manager.level == 1)
+        {
+            GameManager.manager.score += 1;
+        }
+    }
+    public void OnclickSF()
+    {
+        InstantiateFlower(flowerSF);
+    }
+    public void OnclickDAF()
+    {
+        InstantiateFlower(flowerDAF);
+        if (GameManager.manager.level == 1)
+        {
+            GameManager.manager.score -= 1;
+        }
+    }
+    //ccolumn 2
+    public void OnclickOR()
+    {
+        InstantiateFlower(flowerOR);
+        if (GameManager.manager.level == 1)
+        {
+            GameManager.manager.score += 1;
+        }
+    }
+    public void OnclickGAR()
+    {
+        InstantiateFlower(flowerGAR);
+    }
+    public void OnclickHTH()
+    {
+        InstantiateFlower(flowerHTH);
+        if (GameManager.manager.level == 1)
+        {
+            GameManager.manager.score += 1;
+        }
+    }
+    public void OnclickHYD()
+    {
+        InstantiateFlower(flowerHYD);
+    }
+    public void OnclickPEO()
+    {
+        InstantiateFlower(flowerPEO);
     }
     public void OnclickROSE ()
     {
-        InstantiateFlower(flower2);
+        InstantiateFlower(flowerROSE);
     }
-    public void OnMouseDrag()
-    {
-        flower2.transform.position = Input.mousePosition;
-
-    }
+   
 
 
  

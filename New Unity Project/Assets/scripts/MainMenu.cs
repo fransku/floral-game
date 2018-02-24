@@ -14,15 +14,27 @@ public class MainMenu : MonoBehaviour {
 	void Start () {
 //		main = GetComponent <AudioSource>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if ( Input.GetKeyDown(KeyCode.Space) ) {
-			SceneManager.LoadScene("game");
-		}
+
+    // Update is called once per frame
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            SceneManager.LoadScene("game");
+        }
+    }
+    public void OnClickGAME ()
+        {
+            SceneManager.LoadScene("game");
+        }
+    public void OnClickINSTRUCTION()
+    {
+      //  SceneManager.LoadScene("instructions");
+    }
+
+    public void OnClickOPTIONS()
+    {
+        
+    }
+    //scoreText.text = "Score: " + score;
 
 
-		//scoreText.text = "Score: " + score;
-
-	}
 }

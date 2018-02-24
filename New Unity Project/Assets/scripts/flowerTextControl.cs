@@ -7,7 +7,7 @@ public class flowerTextControl : MonoBehaviour {
     public Transform popupText;
     public static string textstatus = "off";
 
-    private void OnMouseEnter()
+    public void OnMouseEnter()
     {
         if (textstatus == "off")
         {
@@ -16,7 +16,7 @@ public class flowerTextControl : MonoBehaviour {
             Instantiate(popupText, new Vector3(transform.position.x, transform.position.y + 2, 0), popupText.rotation);
         }
     }
-    private void OnMouseExit()
+    public void OnMouseExit()
     {
         if (textstatus == "on")
         {

@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Flower : MonoBehaviour {
 
     private Vector3 screenPoint;
-
+  
 
     //GameManager gameManager1;
     // Use this for initialization
@@ -25,7 +26,7 @@ public class Flower : MonoBehaviour {
             Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint);
             transform.position = curPosition;
         }
-
+      
         if (Input.GetMouseButtonUp(0))
         {
             Drop();

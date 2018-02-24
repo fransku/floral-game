@@ -15,11 +15,10 @@ public class Normal_Piece_Behavior : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (touchingVase == false)
-        {
+      
             distance = Vector3.Distance(transform.position, Camera.main.transform.position);
             dragging = true;
-        }
+        
         
     }
 
