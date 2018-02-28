@@ -21,7 +21,7 @@ public class button : MonoBehaviour
     public GameObject flowerHYD;
     public GameObject flowerPEO;
     private Vector3 screenPoint;
-  
+
 
     void InstantiateFlower(GameObject flowerPrefab)
     {
@@ -32,21 +32,21 @@ public class button : MonoBehaviour
         GameObject flower = GameObject.Instantiate(flowerPrefab, screenPoint, Quaternion.identity) as GameObject;
         mouseControl.dragFlower = flower;
     }
-    //first column
+    //first column 
     public void OnclickAST()
     {
         InstantiateFlower(flowerAST);
-         if (GameManager.manager.level == 1) {
+         if (GameManager.manager.level == 2) {
         GameManager.manager.score += 0;
         }
     }
     public void OnclickBIRD()
     {
         InstantiateFlower(flowerBIRD);
-        if (GameManager.manager.level == 1)
+        if (GameManager.manager.level == 2)
         {
             GameManager.manager.score += 1;
-            GameData.gameScore = GameManager.manager.score;
+       
         }
     }
     public void OnclickCAR()
@@ -56,7 +56,7 @@ public class button : MonoBehaviour
     public void OnclickSTAT()
     {
         InstantiateFlower(flowerSTAT);
-        if (GameManager.manager.level == 1)
+        if (GameManager.manager.level == 2)
         {
             GameManager.manager.score += 1;
         }
@@ -68,16 +68,19 @@ public class button : MonoBehaviour
     public void OnclickDAF()
     {
         InstantiateFlower(flowerDAF);
-        if (GameManager.manager.level == 1)
+        if (GameManager.manager.level == 2)
         {
-            GameManager.manager.score -= 1;
+           // if (flowerDAF.length)
+            //{
+                GameManager.manager.score -= 1;
+          //  }
         }
     }
     //ccolumn 2
     public void OnclickOR()
     {
         InstantiateFlower(flowerOR);
-        if (GameManager.manager.level == 1)
+        if (GameManager.manager.level == 2)
         {
             GameManager.manager.score += 1;
         }
@@ -89,7 +92,7 @@ public class button : MonoBehaviour
     public void OnclickHTH()
     {
         InstantiateFlower(flowerHTH);
-        if (GameManager.manager.level == 1)
+        if (GameManager.manager.level == 2)
         {
             GameManager.manager.score += 1;
         }
@@ -105,6 +108,10 @@ public class button : MonoBehaviour
     public void OnclickROSE ()
     {
         InstantiateFlower(flowerROSE);
+        if (GameManager.manager.level == 1)
+        {
+            GameManager.manager.score += 1;
+        }
     }
    
 

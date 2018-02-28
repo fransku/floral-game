@@ -5,26 +5,19 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class score : MonoBehaviour {
-    public Text scoreUI;
+    public GameObject scoreUI;
+    public GameObject scoreUI2;
     // Use this for initialization
     void Start () {
-		if(scoreUI == null)
-        {
-            GameObject.Find("GameScore");
-        }
+		
 	}
   
     // Update is called once per frame
     void Update () {
-        if (scoreUI == null)
-        {
-            GameObject.Find("GameScore");
-        }
-        else
-        {
-            scoreUI.text = ("Score: " + GameManager.manager.score.ToString());
-        }
-        
+       
+        scoreUI.gameObject.GetComponent<Text>().text = ("Score: " + GameManager.manager.score);
+        scoreUI2.gameObject.GetComponent<Text>().text = ("Score: " + GameManager.manager.score);
+
     }
 
     public void OnClick ()

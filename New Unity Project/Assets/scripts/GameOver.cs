@@ -28,7 +28,7 @@ public class GameOver : MonoBehaviour {
 		}
 
         //WIN
-        if (GameManager.manager.score >= 10)
+        if (GameManager.manager.score >= 12)
         {
             textNextorLose.gameObject.GetComponent<Text>().text = ("Good Job, the customer loved it!");
             GameManager.manager.gameOver = false;
@@ -60,13 +60,15 @@ public class GameOver : MonoBehaviour {
 
     public void onClickButton1()
     {
-        if (GameManager.manager.score >= 10)
+        if (GameManager.manager.score >= 12)
         {
             SceneManager.LoadScene("game"); //next day
+            GameManager.manager.level += 1;
         }
         if (GameManager.manager.score >= 5 && GameManager.manager.score <= 9)
         {
             SceneManager.LoadScene("game"); //next day
+            GameManager.manager.level += 1;
         }
         //LOSe
         if (GameManager.manager.score <= 4)
@@ -76,9 +78,10 @@ public class GameOver : MonoBehaviour {
     }
     public void onClickButton2()
     {
-        if (GameManager.manager.score >= 10)
+        if (GameManager.manager.score >= 12)
         {
-            SceneManager.LoadScene("game"); 
+            SceneManager.LoadScene("game");
+           
         }
         if (GameManager.manager.score >= 5 && GameManager.manager.score <= 9)
         {
@@ -87,7 +90,8 @@ public class GameOver : MonoBehaviour {
         //LOSe
         if (GameManager.manager.score <= 4)
         {
-            //quit
+            //quit 
+            SceneManager.LoadScene("main");
         }
     }
 }

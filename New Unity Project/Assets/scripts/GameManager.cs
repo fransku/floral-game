@@ -7,22 +7,23 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    
+
     public static GameManager manager;
 
 
     public int score = 0;
-    public int level = 1;
+    public int level = 2;
 
     public string playerName;
-    
+
     public int ending;
     public bool gameOver = false;
     public bool firstRun = true;
-
+    public GameObject level1;
+    public GameObject level2;
     void Awake()
     {
-      
+
         if (manager == null)
         {
             //DontDestroyOnLoad(gameObject);
@@ -33,17 +34,35 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (level == 1)
+        {
+            level1.SetActive(true);
+            level2.SetActive(false);
+
+        }
+        if (level == 2)
+        {
+            level1.SetActive(false);
+            level2.SetActive(true);
+        }
     }
 
     void Update()
     {
-       // CheckEnd();
+        //    GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
+        if (GameObject.FindGameObjectsWithTag("Flower").Length > 24)
+        {
+            SceneManager.LoadScene("endScene");
+        }
     }
-    
+
     public void OnString_PlayerName(string value)
     {
         playerName = value.ToUpper();
     }
+
+
+}
     /*
     // function to check ending
     public void CheckEnd()
@@ -62,4 +81,4 @@ public class GameManager : MonoBehaviour
             firstRun = false;
         }
     }*/
-}
+
