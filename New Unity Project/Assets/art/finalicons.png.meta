@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: 58cc2d1b4a36f6f4e9d73b0cde1a3ddb
+timeCreated: 1521418611
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: finalicons_0
+    21300002: finalicons_1
+    21300004: finalicons_2
+    21300006: finalicons_3
+    21300008: finalicons_4
+    21300010: finalicons_5
+    21300012: finalicons_6
+    21300014: finalicons_7
+    21300016: finalicons_8
+    21300018: finalicons_9
+    21300020: finalicons_10
+    21300022: finalicons_11
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: finalicons_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 227
+        width: 40
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5099307, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 226
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 182
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 182
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 91
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_5
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 136
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 90
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 46
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 47
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: finalicons_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 135
+        width: 40
+        height: 40
+      alignment: 9
+      pivot: {x: 0.3426857, y: 0.6867533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -195, y: -97}
+      - {x: -205, y: -95}
+      - {x: -219, y: -95}
+      - {x: -226, y: -100}
+      - {x: -231, y: -111}
+      - {x: -231, y: -131}
+      - {x: -221, y: -135}
+      - {x: -197, y: -135}
+      - {x: -192, y: -130}
+      - {x: -190, y: -120}
+      - {x: -190, y: -105}
+    - - {x: -181, y: -95}
+      - {x: -184, y: -98}
+      - {x: -184, y: -135}
+      - {x: -145, y: -135}
+      - {x: -144, y: -130}
+      - {x: -144, y: -97}
+      - {x: -150, y: -95}
+    - - {x: -224, y: -48}
+      - {x: -230, y: -57}
+      - {x: -230, y: -77}
+      - {x: -226, y: -88}
+      - {x: -225, y: -90}
+      - {x: -199, y: -90}
+      - {x: -188, y: -82}
+      - {x: -188, y: -57}
+      - {x: -202, y: -48}
+    - - {x: -150, y: -48}
+      - {x: -178, y: -48}
+      - {x: -184, y: -60}
+      - {x: -184, y: -84}
+      - {x: -180, y: -89}
+      - {x: -153, y: -89}
+      - {x: -142, y: -78}
+      - {x: -142, y: -51}
+    - - {x: -159, y: -4}
+      - {x: -173, y: -4}
+      - {x: -180, y: -10}
+      - {x: -184, y: -14}
+      - {x: -184, y: -34}
+      - {x: -181, y: -47}
+      - {x: -149, y: -47}
+      - {x: -144, y: -33}
+      - {x: -144, y: -12}
+      - {x: -149, y: -6}
+    - - {x: -194, y: 42}
+      - {x: -220, y: 42}
+      - {x: -231, y: 31}
+      - {x: -231, y: 16}
+      - {x: -229, y: 10}
+      - {x: -218, y: 1}
+      - {x: -230, y: -8}
+      - {x: -231, y: -11}
+      - {x: -231, y: -39}
+      - {x: -220, y: -44}
+      - {x: -195, y: -44}
+      - {x: -192, y: -40}
+      - {x: -190, y: -30}
+      - {x: -190, y: 31}
+    - - {x: -174, y: 43}
+      - {x: -184, y: 32}
+      - {x: -184, y: 13}
+      - {x: -180, y: 0}
+      - {x: -150, y: 0}
+      - {x: -144, y: 13}
+      - {x: -144, y: 43}
+    - - {x: -152, y: 87}
+      - {x: -172, y: 87}
+      - {x: -183, y: 83}
+      - {x: -184, y: 76}
+      - {x: -184, y: 56}
+      - {x: -180, y: 48}
+      - {x: -168, y: 46}
+      - {x: -150, y: 46}
+      - {x: -147, y: 49}
+      - {x: -144, y: 57}
+      - {x: -144, y: 78}
+    - - {x: -230, y: 87}
+      - {x: -230, y: 52}
+      - {x: -221, y: 47}
+      - {x: -195, y: 47}
+      - {x: -190, y: 55}
+      - {x: -190, y: 87}
+    - - {x: -184, y: 133}
+      - {x: -184, y: 95}
+      - {x: -164, y: 89}
+      - {x: -140, y: 89}
+      - {x: -140, y: 128}
+      - {x: -144, y: 133}
+    - - {x: -227, y: 133}
+      - {x: -230, y: 128}
+      - {x: -230, y: 99}
+      - {x: -216, y: 90}
+      - {x: -201, y: 90}
+      - {x: -190, y: 102}
+      - {x: -190, y: 125}
+      - {x: -199, y: 133}
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

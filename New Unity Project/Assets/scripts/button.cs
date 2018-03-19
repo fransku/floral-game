@@ -16,8 +16,8 @@ public class button : MonoBehaviour
     public GameObject flowerDAF;
     //colum 2
     public GameObject flowerOR;
-    public GameObject flowerGAR;
-    public GameObject flowerHTH;
+    public GameObject flowerTU;
+    public GameObject flowerSNA;
     public GameObject flowerHYD;
     public GameObject flowerPEO;
     private Vector3 screenPoint;
@@ -87,11 +87,11 @@ public class button : MonoBehaviour
     }
     public void OnclickGAR()
     {
-        InstantiateFlower(flowerGAR);
+        InstantiateFlower(flowerTU);
     }
     public void OnclickHTH()
     {
-        InstantiateFlower(flowerHTH);
+        InstantiateFlower(flowerSNA);
         if (GameManager.manager.level == 2)
         {
             GameManager.manager.score += 1;
