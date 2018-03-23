@@ -21,14 +21,15 @@ public class button : MonoBehaviour
     public GameObject flowerHYD;
     public GameObject flowerPEO;
     private Vector3 screenPoint;
-
+    public AudioClip pickupsfx;
+    public AudioSource pickupsource;
 
     void InstantiateFlower(GameObject flowerPrefab)
     {
         screenPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         screenPoint.z = 0;
         //Vector3 _screenPoint = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
-
+        pickupsource.PlayOneShot(pickupsfx);
         GameObject flower = GameObject.Instantiate(flowerPrefab, screenPoint, Quaternion.identity) as GameObject;
         mouseControl.dragFlower = flower;
     }
