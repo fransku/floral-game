@@ -60,17 +60,19 @@ public class GameOver : MonoBehaviour {
 
     public void onClickButton1()
     {
+        //WIN
         if (GameManager.manager.score >= 12)
         {
             SceneManager.LoadScene("game"); //next day
             GameManager.manager.level += 1;
         }
+        //EH
         if (GameManager.manager.score >= 5 && GameManager.manager.score <= 9)
         {
             SceneManager.LoadScene("game"); //next day
             GameManager.manager.level += 1;
         }
-        //LOSe
+        //LOSE
         if (GameManager.manager.score <= 4)
         {
             SceneManager.LoadScene("game");

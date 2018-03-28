@@ -7,50 +7,22 @@ public class Normal_Piece_Behavior : MonoBehaviour
 {
 
     public bool touchingVase = false;
-
-    //  Vector2 point;  
-    // Use this for initialization
-    bool dragging = false;
+   public bool dragging = true;
     float distance;
 
     void OnMouseDown()
     {
-      
             distance = Vector3.Distance(transform.position, Camera.main.transform.position);
             dragging = true;
-        
+        Debug.Log("dragging");
         
     }
 
     void OnMouseUp()
     {
         dragging = false;
-        
+        Debug.Log("released");
     }
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    /*
-        if (dragging)
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Vector3 rayPoint = ray.GetPoint(distance);
-            transform.position = rayPoint;
-
-        }
-        */
-
-    }
-    
-
-
-
-
+ 
 }
 
