@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MouseControl : MonoBehaviour
 {
     public GameObject dragFlower;
+    Rigidbody2D rb;
 
     private Vector3 screenPoint;
     private Vector3 offset;
@@ -42,9 +43,13 @@ public class MouseControl : MonoBehaviour
         {
             if (dragFlower != null)
             {
+                if (rb == null)
+                {
+                    rb = dragFlower.GetComponent<Rigidbody2D>();
+                }
                 Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 pos.z = 0;
-                dragFlower.transform.position = pos;
+                rb.MovePosition(pos);
             }
         }
 
@@ -52,12 +57,15 @@ public class MouseControl : MonoBehaviour
         {
             if (dragFlower != null)
             {
+
                 Normal_Piece_Behavior nPB = dragFlower.GetComponent<Normal_Piece_Behavior>();
                 if (nPB.touchingVase)
                 {
+                    rb.gravityScale = 1f;
                     dragFlower.GetComponent<Collider2D>().enabled = false;
                 }
 
+                rb = null;
                 dragFlower = null;
             }
         }

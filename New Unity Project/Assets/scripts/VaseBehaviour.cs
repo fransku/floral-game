@@ -31,6 +31,7 @@ public class VaseBehaviour : MonoBehaviour {
             }
             else { Debug.Log("touching");
                 clinksource.PlayOneShot(clinksfx);
+
             }
      
             //_flowerCollider.enabled = false;
