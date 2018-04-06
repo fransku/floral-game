@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Flower
   - Music
+  - collider
+  - insideVase
+  - vase
   layers:
   - Default
   - TransparentFX

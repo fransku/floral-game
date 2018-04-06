@@ -35,6 +35,7 @@ public class MouseControl : MonoBehaviour
                 if (hit.collider.gameObject.tag == "Flower")
                 {
                     dragFlower = hit.collider.gameObject;
+
                 }
             }
         }
@@ -59,10 +60,12 @@ public class MouseControl : MonoBehaviour
             {
 
                 Normal_Piece_Behavior nPB = dragFlower.GetComponent<Normal_Piece_Behavior>();
-                if (nPB.touchingVase)
+                if (nPB.insideVase)
                 {
-                    rb.gravityScale = 1f;
-                    dragFlower.GetComponent<Collider2D>().enabled = false;
+                    rb.gravityScale = 0.2f;
+                    nPB.isFallingInVase = true;
+                    //dragFlower.GetComponent<Collider2D>().enabled = false;
+                 
                 }
 
                 rb = null;

@@ -57,7 +57,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.02
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   touchingVase: 0
   dragging: 1
+  insideVase: 0
+  isFallingInVase: 0
 --- !u!212 &212092758969573208
 SpriteRenderer:
   m_ObjectHideFlags: 1

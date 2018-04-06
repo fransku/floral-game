@@ -8,31 +8,28 @@ public class VaseBehaviour : MonoBehaviour {
     public AudioClip clinksfx;
     public AudioSource clinksource;
 
-    void Update()
+    public Transform vaseBottomPos;
+    public Transform vaseTopPos;
+
+    public void clinker()
     {
-   
+        if (GameObject.FindGameObjectWithTag("Flower").GetComponent<Normal_Piece_Behavior>().stopped == true)
+        {
+            clinksource.PlayOneShot(clinksfx);
+            Debug.Log("Stopped");
+        }
     }
-	/*
-	// Update is called once per frame
-	void Update () {
-		
-	}*/
+
 
     private void OnTriggerEnter2D(Collider2D _flowerCollider)
     {
+
         if (_flowerCollider.tag == FLOWER_PREFIX)
         {
             //_flowerCollider.gameObject.transform.SetParent(this.gameObject.transform);
             _flowerCollider.GetComponent<Normal_Piece_Behavior>().touchingVase = true;
 
-            if (_flowerCollider.GetComponent<Normal_Piece_Behavior>().dragging == false)
-            {
          
-            }
-            else { Debug.Log("touching");
-                clinksource.PlayOneShot(clinksfx);
-
-            }
      
             //_flowerCollider.enabled = false;
         }
