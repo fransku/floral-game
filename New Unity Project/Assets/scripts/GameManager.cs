@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
 
     public int score = 0;
-    public int level = 2;
+    public int level;
 
     public string playerName;
 
@@ -34,6 +34,16 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+     
+    }
+
+    void Update()
+    {
+        //    GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
+        if (GameObject.FindGameObjectsWithTag("Flower").Length > 24)
+        {
+            SceneManager.LoadScene("endScene");
+        }
         if (level == 1)
         {
             level1.SetActive(true);
@@ -44,15 +54,6 @@ public class GameManager : MonoBehaviour
         {
             level1.SetActive(false);
             level2.SetActive(true);
-        }
-    }
-
-    void Update()
-    {
-        //    GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
-        if (GameObject.FindGameObjectsWithTag("Flower").Length > 24)
-        {
-            SceneManager.LoadScene("endScene");
         }
     }
 

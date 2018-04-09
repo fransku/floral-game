@@ -56,6 +56,17 @@ public class Normal_Piece_Behavior : MonoBehaviour
                 GetComponent<Collider2D>().enabled = false;
             }
         }
+        //rotation
+        if  (Input.GetAxis("Mouse ScrollWheel") > 0f)
+        {
+            gameObject.transform.Rotate(Time.deltaTime, 0, 4);
+            
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        {
+            gameObject.transform.Rotate(Time.deltaTime, 0, -4);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
