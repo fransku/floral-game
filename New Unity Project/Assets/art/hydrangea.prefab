@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61554085885407014}
   - component: {fileID: 50164617851518734}
   - component: {fileID: 114252800937741824}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hydrangea
   m_TagString: Flower
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61554085885407014
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -101,6 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   touchingVase: 0
   dragging: 1
+  insideVase: 0
+  isFallingInVase: 0
+  stopped: 0
 --- !u!212 &212689489912112828
 SpriteRenderer:
   m_ObjectHideFlags: 1

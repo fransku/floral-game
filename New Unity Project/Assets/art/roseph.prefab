@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114224584665037136}
   - component: {fileID: 61811414857862386}
   - component: {fileID: 50202349758715202}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: roseph
   m_TagString: Flower
   m_Icon: {fileID: 0}
@@ -101,6 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   touchingVase: 0
   dragging: 1
+  insideVase: 0
+  isFallingInVase: 0
+  stopped: 0
 --- !u!212 &212504085972445498
 SpriteRenderer:
   m_ObjectHideFlags: 1

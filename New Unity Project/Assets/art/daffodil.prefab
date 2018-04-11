@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114909978718308756}
   - component: {fileID: 50164051390810362}
   - component: {fileID: 61099201497825310}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: daffodil
   m_TagString: Flower
   m_Icon: {fileID: 0}

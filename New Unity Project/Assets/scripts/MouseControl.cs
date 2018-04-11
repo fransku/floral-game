@@ -17,7 +17,7 @@ public class MouseControl : MonoBehaviour
        screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
        // Cursor.visible = false;
         //  offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-
+        
     }
 
     void Update()

@@ -18,12 +18,14 @@ public class GameManager : MonoBehaviour
 
     public int ending;
     public bool gameOver = false;
+
     public bool firstRun = true;
     public GameObject level1;
     public GameObject level2;
+
     void Awake()
     {
-
+        Debug.Log("level" + level);
         if (manager == null)
         {
             //DontDestroyOnLoad(gameObject);
@@ -33,16 +35,6 @@ public class GameManager : MonoBehaviour
         else if (manager != this)
         {
             Destroy(gameObject);
-        }
-     
-    }
-
-    void Update()
-    {
-        //    GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
-        if (GameObject.FindGameObjectsWithTag("Flower").Length > 24)
-        {
-            SceneManager.LoadScene("endScene");
         }
         if (level == 1)
         {
@@ -57,11 +49,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        //    GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
+        if (GameObject.FindGameObjectsWithTag("Flower").Length > 24)
+        {
+            SceneManager.LoadScene("endScene");
+        }
+      
+    }
+
     public void OnString_PlayerName(string value)
     {
         playerName = value.ToUpper();
     }
-
 
 }
     /*

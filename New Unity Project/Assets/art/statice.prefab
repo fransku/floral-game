@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114323480294844024}
   - component: {fileID: 50455059837914926}
   - component: {fileID: 61205056197789474}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: statice
   m_TagString: Flower
   m_Icon: {fileID: 0}
@@ -101,6 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   touchingVase: 0
   dragging: 1
+  insideVase: 0
+  isFallingInVase: 0
+  stopped: 0
 --- !u!212 &212365634069702584
 SpriteRenderer:
   m_ObjectHideFlags: 1
