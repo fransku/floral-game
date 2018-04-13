@@ -40,7 +40,7 @@ public class button : MonoBehaviour
     {
         InstantiateFlower(flowerAST);
          if (GameManager.manager.level == 2) {
-        GameManager.manager.score += 0;
+        GameManager.manager.score += 1;
         }
     }
     public void OnclickBIRD()
