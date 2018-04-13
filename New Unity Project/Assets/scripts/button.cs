@@ -28,6 +28,7 @@ public class button : MonoBehaviour
     {
         screenPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         screenPoint.z = 0;
+       
         //Vector3 _screenPoint = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
         pickupsource.PlayOneShot(pickupsfx);
         GameObject flower = GameObject.Instantiate(flowerPrefab, screenPoint, Quaternion.identity) as GameObject;

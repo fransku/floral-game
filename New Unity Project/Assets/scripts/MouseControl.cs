@@ -48,6 +48,7 @@ public class MouseControl : MonoBehaviour
                 {
                     rb = dragFlower.GetComponent<Rigidbody2D>();
                 }
+                dragFlower.GetComponent<Normal_Piece_Behavior>().dragging = true;
                 Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 pos.z = 0;
                 rb.MovePosition(pos);
@@ -60,9 +61,10 @@ public class MouseControl : MonoBehaviour
             {
 
                 Normal_Piece_Behavior nPB = dragFlower.GetComponent<Normal_Piece_Behavior>();
+                nPB.dragging = false;
                 if (nPB.insideVase)
                 {
-                    rb.gravityScale = 0.2f;
+                    rb.gravityScale = 100f;
                     nPB.isFallingInVase = true;
                     //dragFlower.GetComponent<Collider2D>().enabled = false;
                  

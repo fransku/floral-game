@@ -7,7 +7,7 @@ public class Normal_Piece_Behavior : MonoBehaviour
 {
 
     public bool touchingVase = false;
-   public bool dragging = true;
+    public bool dragging = true;
     public bool insideVase = false;
     public bool isFallingInVase = false;
     public bool stopped = false;
@@ -28,15 +28,15 @@ public class Normal_Piece_Behavior : MonoBehaviour
     void OnMouseDown()
     {
             distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-            dragging = true;
-        Debug.Log("dragging");
+          //  dragging = true;
+    
         
     }
 
     void OnMouseUp()
     {
-        dragging = false;
-        Debug.Log("released");
+        //dragging = false;
+       
     }
     private float rotationY = 0f;
     private float sensitivityY = 10f;
@@ -57,21 +57,15 @@ public class Normal_Piece_Behavior : MonoBehaviour
                 GetComponent<Collider2D>().enabled = false;
             }
         }
-        /*rotation
-        if  (Input.GetAxis("Mouse ScrollWheel") > 0f)
+        
+        if (dragging)
         {
-            gameObject.transform.Rotate(Time.deltaTime, 0, 4);
-            
-        }
-        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
-        {
-            gameObject.transform.Rotate(Time.deltaTime, 0, -4);
-        }
-        */
-        rotationY += Input.GetAxis("Mouse ScrollWheel") * sensitivityY;
-        rotationY = Mathf.Clamp(rotationY, -20, 20);
+            rotationY += Input.GetAxis("Mouse ScrollWheel") * sensitivityY;
+            rotationY = Mathf.Clamp(rotationY, -20, 20);
 
-        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, -rotationY);
+            transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, -rotationY);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

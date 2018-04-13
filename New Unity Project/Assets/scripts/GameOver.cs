@@ -64,15 +64,15 @@ public class GameOver : MonoBehaviour {
         if (GameManager.manager.score >= 12)
         {
             SceneManager.LoadScene("game"); //next day
-            Debug.Log("Level 2");
-            Debug.Log(GameManager.manager.level);
+            GameManager.manager.level += 1;
+            Debug.Log("level" + GameManager.manager.level);
         }
         //EH
         if (GameManager.manager.score >= 5 && GameManager.manager.score <= 9)
         {
             SceneManager.LoadScene("game"); //next day
             GameManager.manager.level += 1;
-            Debug.Log(GameManager.manager.level);
+            Debug.Log("level" + GameManager.manager.level);
         }
         //LOSE
         if (GameManager.manager.score <= 4)

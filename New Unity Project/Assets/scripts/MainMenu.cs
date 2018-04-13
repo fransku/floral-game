@@ -19,14 +19,14 @@ public class MainMenu : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
             SceneManager.LoadScene("game");
-            //GameManager.manager.level = 1;
+            GameManager.manager.level = 1;
          
         }
     }
     public void OnClickGAME ()
         {
             SceneManager.LoadScene("game");
-      //  GameManager.manager.level = 1;
+        GameData.level = 1;
        
         }
     public void OnClickINSTRUCTION()

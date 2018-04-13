@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
 
     public int score;
-    public int level = 2;
+    public int level;
 
     public string playerName;
 

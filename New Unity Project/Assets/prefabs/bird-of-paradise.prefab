@@ -9,91 +9,91 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1207563927805358}
+  m_RootGameObject: {fileID: 1793906936808600}
   m_IsPrefabParent: 1
---- !u!1 &1207563927805358
+--- !u!1 &1793906936808600
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4674565859796714}
-  - component: {fileID: 212689489912112828}
-  - component: {fileID: 61554085885407014}
-  - component: {fileID: 50164617851518734}
-  - component: {fileID: 114252800937741824}
-  m_Layer: 9
-  m_Name: hydrangea
+  - component: {fileID: 4175333731911648}
+  - component: {fileID: 212402973429298070}
+  - component: {fileID: 50178169044397858}
+  - component: {fileID: 61083400165048522}
+  - component: {fileID: 114949666262247232}
+  m_Layer: 3
+  m_Name: bird-of-paradise
   m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4674565859796714
+--- !u!4 &4175333731911648
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1207563927805358}
+  m_GameObject: {fileID: 1793906936808600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5445166, y: -0.7922395, z: 0}
+  m_LocalPosition: {x: 4.9904833, y: -1.3588125, z: 0}
   m_LocalScale: {x: 3.7, y: 3.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50164617851518734
+--- !u!50 &50178169044397858
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1207563927805358}
+  m_GameObject: {fileID: 1793906936808600}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 100
+  m_LinearDrag: 1000
+  m_AngularDrag: 1000
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61554085885407014
+--- !u!61 &61083400165048522
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1207563927805358}
+  m_GameObject: {fileID: 1793906936808600}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.005671233, y: -0.2466934}
+  m_Offset: {x: -0.060210403, y: -0.27991724}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.94, y: 1.22}
+    oldSize: {x: 0.76, y: 1.56}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39886254, y: 0.7334575}
+  m_Size: {x: 0.06462989, y: 0.9929137}
   m_EdgeRadius: 0
---- !u!114 &114252800937741824
+--- !u!114 &114949666262247232
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1207563927805358}
+  m_GameObject: {fileID: 1793906936808600}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81d53099a2181dc4dbfaef3801d32b40, type: 3}
@@ -104,12 +104,12 @@ MonoBehaviour:
   insideVase: 0
   isFallingInVase: 0
   stopped: 0
---- !u!212 &212689489912112828
+--- !u!212 &212402973429298070
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1207563927805358}
+  m_GameObject: {fileID: 1793906936808600}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -138,7 +138,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 92adf3259f1bc4c4bad24c7a8084f093, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 91b886b7858b04044941f2fcb8293dd0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
