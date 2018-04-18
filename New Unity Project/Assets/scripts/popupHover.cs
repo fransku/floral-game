@@ -52,7 +52,7 @@ public class popupHover : MonoBehaviour {
     public void OnEnterTU()
     {
         gameObject.SetActive(true);
-        popupText.gameObject.GetComponent<Text>().text = ("Tulip: Symbol of fame and perfect love.");
+        popupText.gameObject.GetComponent<Text>().text = ("Tulip: Symbol of fame and perfection.");
     }
     public void OnEnterSNA()
     {

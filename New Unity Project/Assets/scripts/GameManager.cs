@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager manager;
 
 
-    public int score;
+    public float score;
     public int level;
 
     public string playerName;

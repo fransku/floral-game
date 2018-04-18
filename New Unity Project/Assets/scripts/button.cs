@@ -72,6 +72,10 @@ public class button : MonoBehaviour
     public void OnclickSF()
     {
         InstantiateFlower(flowerSF);
+         if (GameManager.manager.level == 2)
+        {
+            GameManager.manager.score += 0.5f;
+        }
     }
     public void OnclickDAF()
     {
@@ -88,11 +92,19 @@ public class button : MonoBehaviour
     public void OnclickOR()
     {
         InstantiateFlower(flowerOR);
-        
+        if (GameManager.manager.level == 2)
+        {
+            GameManager.manager.score += 0.5f;
+        }
+
     }
     public void OnclickTU() //TULIP
     {
         InstantiateFlower(flowerTU);
+        if (GameManager.manager.level == 2)
+        {
+            GameManager.manager.score += 0.2f;
+        }
     }
     public void OnclickSNA() //SNAP
     {
@@ -105,10 +117,18 @@ public class button : MonoBehaviour
     public void OnclickHYD()
     {
         InstantiateFlower(flowerHYD);
+        if (GameManager.manager.level == 2)
+        {
+            GameManager.manager.score += 0.1f;
+        }
     }
     public void OnclickPEO()
     {
         InstantiateFlower(flowerPEO);
+        if (GameManager.manager.level == 2)
+        {
+            GameManager.manager.score += 0.8f;
+        }
 
     }
     public void OnclickROSE ()
@@ -117,6 +137,10 @@ public class button : MonoBehaviour
         if (GameManager.manager.level == 1)
         {
             GameManager.manager.score += 1;
+        }
+        if (GameManager.manager.level == 2)
+        {
+            GameManager.manager.score += 0.2f;
         }
     }
    

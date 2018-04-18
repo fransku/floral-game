@@ -1050,7 +1050,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4760509312791996, guid: c986c139b2a005e45935c194c7184bd5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 106.96536
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4760509312791996, guid: c986c139b2a005e45935c194c7184bd5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1071,6 +1071,10 @@ Prefab:
     - target: {fileID: 4760509312791996, guid: c986c139b2a005e45935c194c7184bd5, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760509312791996, guid: c986c139b2a005e45935c194c7184bd5, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c986c139b2a005e45935c194c7184bd5, type: 2}
@@ -1874,18 +1878,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: dada4f0d11419ae4fbdf5223daa1d711, type: 3}
-    m_FontSize: 50
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 0
     m_MaxSize: 80
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Generic Flower Game
+  m_Text: "\u273F Bloom Room \u273F"
 --- !u!222 &1757966804
 CanvasRenderer:
   m_ObjectHideFlags: 0
