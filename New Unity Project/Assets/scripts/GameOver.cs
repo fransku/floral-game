@@ -28,7 +28,7 @@ public class GameOver : MonoBehaviour {
 		}
 
         //WIN
-        if (GameManager.manager.score >= 12)
+        if (GameManager.manager.score >= 6)
         {
             textNextorLose.gameObject.GetComponent<Text>().text = ("Good Job, the customer loved it!");
             GameManager.manager.gameOver = false;
@@ -36,7 +36,7 @@ public class GameOver : MonoBehaviour {
             buttonOption2.gameObject.GetComponent<Text>().text = ("Try Again");
         }
         //EH
-        if (GameManager.manager.score >= 5 && GameManager.manager.score <= 9)
+        if (GameManager.manager.score >= 3 && GameManager.manager.score <= 5)
         {
             textNextorLose.gameObject.GetComponent<Text>().text = ("Eh. The customer didn't seem too happy, but paid you anyway.");
             GameManager.manager.gameOver = false;
@@ -45,7 +45,7 @@ public class GameOver : MonoBehaviour {
 
         }
         //LOSE
-        if (GameManager.manager.score <= 4)
+        if (GameManager.manager.score <= 2)
         {
             GameManager.manager.gameOver = true;
             textNextorLose.gameObject.GetComponent<Text>().text = ("You got a call from your boss after a complaint from a customer. You're fired");
@@ -61,38 +61,39 @@ public class GameOver : MonoBehaviour {
     public void onClickButton1()
     {
         //WIN
-        if (GameManager.manager.score >= 12)
+        if (GameManager.manager.score >= 6)
         {
             SceneManager.LoadScene("game"); //next day
             GameManager.manager.level += 1;
             Debug.Log("level" + GameManager.manager.level);
         }
         //EH
-        if (GameManager.manager.score >= 5 && GameManager.manager.score <= 9)
+        if (GameManager.manager.score >= 3 && GameManager.manager.score <= 5)
         {
             SceneManager.LoadScene("game"); //next day
             GameManager.manager.level += 1;
+            
             Debug.Log("level" + GameManager.manager.level);
         }
         //LOSE
-        if (GameManager.manager.score <= 4)
+        if (GameManager.manager.score <= 2)
         {
             SceneManager.LoadScene("game");
         }
     }
     public void onClickButton2()
     {
-        if (GameManager.manager.score >= 12)
+        if (GameManager.manager.score >= 6)
         {
             SceneManager.LoadScene("game");
            
         }
-        if (GameManager.manager.score >= 5 && GameManager.manager.score <= 9)
+        if (GameManager.manager.score >= 3 && GameManager.manager.score <= 5)
         {
             SceneManager.LoadScene("game"); 
         }
         //LOSe
-        if (GameManager.manager.score <= 4)
+        if (GameManager.manager.score <= 2)
         {
             //quit 
             SceneManager.LoadScene("main");

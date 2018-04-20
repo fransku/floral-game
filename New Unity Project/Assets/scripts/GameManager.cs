@@ -30,6 +30,11 @@ public class GameManager : MonoBehaviour
         {
             //DontDestroyOnLoad(gameObject);
             score = GameData.gameScore;
+
+            //test
+           // level = GameData.level;
+
+            ///
             manager = this;
         }
         else if (manager != this)
@@ -62,15 +67,13 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             level = 1;
-            level1.SetActive(true);
-            level2.SetActive(false);
+          
 
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             level = 2;
-            level1.SetActive(false);
-            level2.SetActive(true);
+            
         }
 
     }

@@ -26,9 +26,9 @@ public class MainMenu : MonoBehaviour {
     public void OnClickGAME ()
         {
             SceneManager.LoadScene("game");
-        GameData.level = 1;
-       
-        }
+       // GameManager.manager.level = 1;
+
+    }
     public void OnClickINSTRUCTION()
     {
       
