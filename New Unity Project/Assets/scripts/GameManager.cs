@@ -55,12 +55,22 @@ public class GameManager : MonoBehaviour
         {
             level = 1;
           
-
+                
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             level = 2;
             
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            level = 3;
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            level = 4;
+
         }
 
     }

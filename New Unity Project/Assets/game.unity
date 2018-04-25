@@ -12741,10 +12741,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: My dear florist, you're ready. I have transfered ownership of the shop to
-    you. Decide for yourself the kinds of arrangements to create and for who to create
-    them for. Give someone unconditional happiness and thought and surely it will
-    be returned.
+  m_Text: "My dear florist, you're ready. I have transfered ownership of the shop
+    to you. Decide for yourself the kinds of arrangements to create and for who to
+    create them for. Show some love. \n\nGoodbye"
 --- !u!222 &995889506
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20467,7 +20466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  level: 1
+  level: 3
   playerName: 
   ending: 0
   gameOver: 0
