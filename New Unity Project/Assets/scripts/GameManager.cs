@@ -25,32 +25,26 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+    
         Debug.Log("level" + level);
         if (manager == null)
         {
-            //DontDestroyOnLoad(gameObject);
+           
             score = GameData.gameScore;
 
-            //test
-           // level = GameData.level;
-
-            ///
             manager = this;
         }
-        else if (manager != this)
+        else
         {
             Destroy(gameObject);
         }
-       
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()
     {
         //    GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
-        if (GameObject.FindGameObjectsWithTag("Flower").Length > 24)
-        {
-            SceneManager.LoadScene("endScene");
-        }
+ 
 
         if (level == 1)
         {
@@ -62,6 +56,11 @@ public class GameManager : MonoBehaviour
         {
             level1.SetActive(false);
             level2.SetActive(true);
+        }
+
+        if (GameObject.FindGameObjectsWithTag("Flower").Length > 24)
+        {
+            SceneManager.LoadScene("endScene");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
