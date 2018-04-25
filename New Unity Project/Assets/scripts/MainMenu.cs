@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour {
 
-	//public int score = 0;
-
-	//public Text scoreText;
-
-	// Use this for initialization
-	void Start () {
-//		main = GetComponent <AudioSource>();
-	}
+    public AudioMixer audiomixer;
 
     // Update is called once per frame
     void Update() {
@@ -33,10 +27,14 @@ public class MainMenu : MonoBehaviour {
     {
       
     }
-
-    public void OnClickOPTIONS()
+    
+    public void setVolume(float volume)
     {
-        
+        audiomixer.SetFloat("mainVolume", volume);
+    }
+    public void OnClickQUIT()
+    {
+        Application.Quit();
     }
     //scoreText.text = "Score: " + score;
 

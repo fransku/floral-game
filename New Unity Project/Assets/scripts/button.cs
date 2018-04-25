@@ -43,6 +43,10 @@ public class button : MonoBehaviour
          if (GameManager.manager.level == 2) {
         GameManager.manager.score += 1;
         }
+        if (GameManager.manager.level == 3)
+        {
+            GameManager.manager.score += 1f;
+        }
     }
     public void OnclickBIRD()
     {
@@ -52,6 +56,10 @@ public class button : MonoBehaviour
             GameManager.manager.score += 1;
        
         }
+           if (GameManager.manager.level == 3)
+        {
+            GameManager.manager.score += 0.5f;
+        }
     }
     public void OnclickCAR()
     {
@@ -59,6 +67,10 @@ public class button : MonoBehaviour
         if (GameManager.manager.level == 2)
         {
             GameManager.manager.score += 1;
+        }
+        if (GameManager.manager.level == 3)
+        {
+            GameManager.manager.score += 0.2f;
         }
     }
     public void OnclickSTAT()
@@ -68,11 +80,19 @@ public class button : MonoBehaviour
         {
             GameManager.manager.score += 1;
         }
+           if (GameManager.manager.level == 3)
+        {
+            GameManager.manager.score += 1f;
+        }
     }
     public void OnclickSF()
     {
         InstantiateFlower(flowerSF);
          if (GameManager.manager.level == 2)
+        {
+            GameManager.manager.score += 0.5f;
+        }
+        if (GameManager.manager.level == 3)
         {
             GameManager.manager.score += 0.5f;
         }
@@ -84,7 +104,7 @@ public class button : MonoBehaviour
         {
            // if (flowerDAF.length)
             //{
-                GameManager.manager.score -= 1;
+                GameManager.manager.score += 1;
           //  }
         }
     }
@@ -105,6 +125,10 @@ public class button : MonoBehaviour
         {
             GameManager.manager.score += 0.2f;
         }
+        if (GameManager.manager.level == 3)
+        {
+            GameManager.manager.score += 1f;
+        }
     }
     public void OnclickSNA() //SNAP
     {
@@ -112,6 +136,10 @@ public class button : MonoBehaviour
         if (GameManager.manager.level == 2)
         {
             GameManager.manager.score += 1;
+        }
+        if (GameManager.manager.level == 3)
+        {
+            GameManager.manager.score += 0.2f;
         }
     }
     public void OnclickHYD()
@@ -121,6 +149,10 @@ public class button : MonoBehaviour
         {
             GameManager.manager.score += 0.1f;
         }
+        if (GameManager.manager.level == 3)
+        {
+            GameManager.manager.score += 0.2f;
+        }
     }
     public void OnclickPEO()
     {
@@ -128,6 +160,10 @@ public class button : MonoBehaviour
         if (GameManager.manager.level == 2)
         {
             GameManager.manager.score += 0.8f;
+        }
+        if (GameManager.manager.level == 3)
+        {
+            GameManager.manager.score += 1f;
         }
 
     }

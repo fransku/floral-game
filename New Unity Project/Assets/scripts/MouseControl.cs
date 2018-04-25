@@ -8,7 +8,9 @@ public class MouseControl : MonoBehaviour
 {
     public GameObject dragFlower;
     Rigidbody2D rb;
-
+    SpriteRenderer sr;
+    public GameObject flowers;
+    bool flipped = false;
     private Vector3 screenPoint;
     private Vector3 offset;
     void Start()
@@ -39,16 +41,39 @@ public class MouseControl : MonoBehaviour
                 }
             }
         }
+        /*
+        if (Input.GetMouseButtonDown(1))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Camera.main.transform.forward);
+            if (hit.collider != null)
+            {
+                if (hit.collider.gameObject.tag == "Flower")
+                {
+                   flowers = GameObject.FindGameObjectWithTag("Flower");
+                    if (flipped == false)
+                    {
+                        flowers.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                        flipped = true;
+                    } else
+                    {
+                        flowers.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                        flipped = false;
+                    }
+                    Debug.Log("Right Clik");
 
-        if (Input.GetMouseButton(0))
+                }
+            }
+        }*/
+   
+
+            if (Input.GetMouseButton(0))
         {
             if (dragFlower != null)
             {
                 if (rb == null)
                 {
                     rb = dragFlower.GetComponent<Rigidbody2D>();
-                }
-                dragFlower.GetComponent<Normal_Piece_Behavior>().dragging = true;
+                }  
                 Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 pos.z = 0;
                 rb.MovePosition(pos);
