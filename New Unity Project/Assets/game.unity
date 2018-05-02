@@ -20466,7 +20466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  level: 3
+  level: 1
   playerName: 
   ending: 0
   gameOver: 0
