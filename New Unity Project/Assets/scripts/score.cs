@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class score : MonoBehaviour {
     public GameObject scoreUI;
     public GameObject scoreUI2;
-    // Use this for initialization
+
+//ATTENTION this code is currently useless, maybe add score in the future?
+
     void Start () {
 		
 	}
@@ -22,7 +24,6 @@ public class score : MonoBehaviour {
 
     public void OnClick ()
     {
-        SceneManager.LoadScene("endScene", LoadSceneMode.Single);
-        GameManager.manager.firstRun = false;
+      
     }
 }

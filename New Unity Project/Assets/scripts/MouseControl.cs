@@ -13,10 +13,16 @@ public class MouseControl : MonoBehaviour
     bool flipped = false;
     private Vector3 screenPoint;
     private Vector3 offset;
+
+    public button buttonUI;
+
     void Start()
     {
         dragFlower = null;
        screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+
+    
+
        // Cursor.visible = false;
         //  offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
         
@@ -37,10 +43,13 @@ public class MouseControl : MonoBehaviour
                 if (hit.collider.gameObject.tag == "Flower")
                 {
                     dragFlower = hit.collider.gameObject;
-
+                    //below is making the flower gameobject appear in front of others
+                    buttonUI.flowerLayerCounter += 1;
+                    dragFlower.GetComponent<SpriteRenderer>().sortingOrder = buttonUI.flowerLayerCounter;
                 }
             }
         }
+
         /*
         if (Input.GetMouseButtonDown(1))
         {

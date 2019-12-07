@@ -14,7 +14,7 @@ public class button : MonoBehaviour
     public GameObject flowerSTAT;
     public GameObject flowerSF;
     public GameObject flowerDAF;
-    //colum 2
+    //column 2
     public GameObject flowerOR;
     public GameObject flowerTU;
     public GameObject flowerSNA;
@@ -23,7 +23,14 @@ public class button : MonoBehaviour
     private Vector3 screenPoint;
     public AudioClip pickupsfx;
     public AudioSource pickupsource;
- 
+
+    public int flowerLayerCounter;
+
+     void Update()
+    {
+        
+    }
+
     void InstantiateFlower(GameObject flowerPrefab)
     {
         screenPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -33,8 +40,11 @@ public class button : MonoBehaviour
         pickupsource.PlayOneShot(pickupsfx);
         GameObject flower = GameObject.Instantiate(flowerPrefab, screenPoint, Quaternion.identity) as GameObject;
         mouseControl.dragFlower = flower;
-      //  flowerPrefab.layer += 1;
- 
+
+        //   flowerPrefab.layer += 1;
+      
+        flowerLayerCounter += 1;
+        flower.GetComponent<SpriteRenderer>().sortingOrder = flowerLayerCounter; 
     }
     //first column 
     public void OnclickAST()

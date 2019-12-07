@@ -51,27 +51,16 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("endScene");
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        //used for debugging through levels, may clip
+        if (Input.GetKeyDown(KeyCode.Equals))
         {
-            level = 1;
-          
-                
+            level += 1;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Minus))
         {
-            level = 2;
-            
+            level -= 1;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            level = 3;
-
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            level = 4;
-
-        }
+      
 
     }
 
