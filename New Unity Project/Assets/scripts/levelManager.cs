@@ -21,8 +21,8 @@ public class levelManager : MonoBehaviour {
     {
         //this makes it easier to see everything once we have more levels; but we can't use it because its only for active gameobjects.
         //i'll put it off for now 12/05
-        Text windowText = GameObject.Find("windowText").GetComponent<Text>();
-        Text promptText = GameObject.Find("message").GetComponent<Text>();
+      //  Text windowText = GameObject.Find("windowText").GetComponent<Text>();
+        //Text promptText = GameObject.Find("message").GetComponent<Text>();
 
     }
 

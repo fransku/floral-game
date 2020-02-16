@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPresssfx: {fileID: 8300000, guid: f37f836d20902f345bb989d39defb0f3, type: 3}
   notePresssource: {fileID: 0}
+  easeType: 28
 --- !u!1 &5353516021801197805
 GameObject:
   m_ObjectHideFlags: 0

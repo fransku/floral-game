@@ -16,12 +16,12 @@ public class MouseControl : MonoBehaviour
 
     public button buttonUI;
 
+    public trashButtonScript tb;
+
     void Start()
     {
         dragFlower = null;
        screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-
-    
 
        // Cursor.visible = false;
         //  offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
@@ -37,16 +37,26 @@ public class MouseControl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Camera.main.transform.forward);
+
+           
+
             if (hit.collider != null)
             {
                 if (hit.collider.gameObject.tag == "Flower")
                 {
                     dragFlower = hit.collider.gameObject;
+
                     //below is making the flower gameobject appear in front of others
                     buttonUI.flowerLayerCounter += 1;
                     dragFlower.GetComponent<SpriteRenderer>().sortingOrder = buttonUI.flowerLayerCounter;
                 }
+
+
+                
+
+
             }
         }
 
@@ -104,8 +114,11 @@ public class MouseControl : MonoBehaviour
                  
                 }
 
-                rb = null;
-                dragFlower = null;
+                if (!tb.hovering)
+                {
+                    rb = null;
+                    dragFlower = null;
+                }
             }
         }
 

@@ -43,8 +43,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //    GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
- 
-
 
         if (GameObject.FindGameObjectsWithTag("Flower").Length > 24)
         {

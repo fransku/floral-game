@@ -18,6 +18,10 @@ public class Normal_Piece_Behavior : MonoBehaviour
     
     float distance;
 
+    //array of int to indicate the score of each flower in different levels
+
+    public int[] flowerPoints;
+
     private void Start()
     {
         vaseBehaviour = GameObject.FindGameObjectWithTag("vase").GetComponent<VaseBehaviour>();
@@ -28,9 +32,7 @@ public class Normal_Piece_Behavior : MonoBehaviour
     void OnMouseDown()
     {
             distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-          //  dragging = true;
-    
-        
+          //  dragging = true
     }
 
     void OnMouseUp()
@@ -42,6 +44,7 @@ public class Normal_Piece_Behavior : MonoBehaviour
     private float sensitivityY = 10f;
     private void Update()
     {
+
         if (isFallingInVase)
         {
             if (sprite.bounds.min.y <= fallYValue)

@@ -119,6 +119,7 @@
     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaStoreEditor.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaUtilsEditor.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\MenuItems.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\LeanTween\Editor\LeanTweenDocumentationEditor.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\LineEndings\Editor\LineEndingsEditMenu.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Editor\SfxrGenerator.cs" />
     <Reference Include="Unity.Timeline.Editor">
