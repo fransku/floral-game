@@ -9,6 +9,8 @@ public class doneButtonScript : MonoBehaviour
     public AudioClip buttonPresssfx;
     public AudioSource notePresssource;
 
+    public GameObject NoteButton;
+
     public LeanTweenType easeType;
 
     public void OnClick()
@@ -20,9 +22,9 @@ public class doneButtonScript : MonoBehaviour
         notePresssource.PlayOneShot(buttonPresssfx);
 
         StartCoroutine(DoneClickedCoroutine());
-
-
     }
+
+
 
     IEnumerator DoneClickedCoroutine()
     {

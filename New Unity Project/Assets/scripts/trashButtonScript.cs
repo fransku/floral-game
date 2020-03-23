@@ -33,7 +33,9 @@ public class trashButtonScript : MonoBehaviour
         trashImg.sprite = trashDown;
         yield return new WaitForSeconds(0.5f);
         trashImg.sprite = trashNormal;
-    
+
+        //subtract points? how can I do this ASK CODE HELP
+     //   GameManager.manager.score -= flowerPrefab.GetComponent<Normal_Piece_Behavior>().flowerPoints[GameManager.manager.level - 1];
     }
 
     //if mouse is hovering over trash
@@ -41,6 +43,7 @@ public class trashButtonScript : MonoBehaviour
         hovering = true;
     }
     public void hoverOff() {
+
         hovering = false;
     }
 
@@ -49,6 +52,8 @@ public class trashButtonScript : MonoBehaviour
     {
         if(mc.dragFlower != null)
         {
+           GameManager.manager.score -= mc.dragFlower.GetComponent<Normal_Piece_Behavior>().flowerPoints[GameManager.manager.level -1];
+
             Destroy(mc.dragFlower.gameObject);
         }
     }

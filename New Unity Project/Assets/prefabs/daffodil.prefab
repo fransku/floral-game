@@ -99,7 +99,7 @@ MonoBehaviour:
   insideVase: 0
   isFallingInVase: 0
   stopped: 0
-  flowerPoints: 
+  flowerPoints: 00000000000000000000000000000000
 --- !u!50 &50164051390810362
 Rigidbody2D:
   serializedVersion: 4

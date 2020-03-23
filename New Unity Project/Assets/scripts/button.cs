@@ -31,7 +31,7 @@ public class button : MonoBehaviour
         
     }
 
-    void InstantiateFlower(GameObject flowerPrefab)
+    GameObject InstantiateFlower(GameObject flowerPrefab)
     {
         screenPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         screenPoint.z = 0;
@@ -44,14 +44,18 @@ public class button : MonoBehaviour
         //   flowerPrefab.layer += 1;
       
         flowerLayerCounter += 1;
-        flower.GetComponent<SpriteRenderer>().sortingOrder = flowerLayerCounter; 
+        flower.GetComponent<SpriteRenderer>().sortingOrder = flowerLayerCounter;
+        return flower;
     }
    
     public void OnClickFlower (GameObject flowerPrefab)
     {
-        InstantiateFlower(flowerPrefab);
+         GameObject flower = InstantiateFlower(flowerPrefab);
+        //adds points
         GameManager.manager.score += flowerPrefab.GetComponent<Normal_Piece_Behavior>().flowerPoints[GameManager.manager.level - 1];
         Debug.Log("score" + GameManager.manager.score);
+
+
     }
    
 

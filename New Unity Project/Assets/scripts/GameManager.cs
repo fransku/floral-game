@@ -43,9 +43,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //    GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
-
+        Debug.Log(GameObject.FindGameObjectsWithTag("Flower").Length);
         if (GameObject.FindGameObjectsWithTag("Flower").Length > 24)
         {
+           
             SceneManager.LoadScene("endScene");
         }
 

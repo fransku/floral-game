@@ -23,9 +23,43 @@ public class GameOver : MonoBehaviour {
 		if ( Input.GetKey(KeyCode.R) ) {
 			SceneManager.LoadScene("main");
             GameManager.manager.score = GameData.gameScore;
-
-            //GameManager.manager.score = 0;
+           
 		}
+
+        //new game over system
+
+        if (GameManager.manager.level == 1)
+        {
+            if(GameManager.manager.score >= 12)
+            {
+                textNextorLose.gameObject.GetComponent<Text>().text = ("Good Job, the customer loved it!");
+                GameManager.manager.gameOver = false;
+                buttonOption1.gameObject.GetComponent<Text>().text = ("Next Day");
+            }
+
+            if (GameManager.manager.score <= 11)
+            {
+                textNextorLose.gameObject.GetComponent<Text>().text = ("This isn't what the customer wanted! Try again.");
+                buttonOption1.gameObject.GetComponent<Text>().text = ("Try Again");
+            }
+
+        }
+
+        if (GameManager.manager.level == 2)
+        {
+            if(GameManager.manager.score >= 12)
+            {
+                textNextorLose.gameObject.GetComponent<Text>().text = ("Good Job, the customer loved it!");
+                GameManager.manager.gameOver = false;
+                buttonOption1.gameObject.GetComponent<Text>().text = ("Next Day");
+            }
+            //if(GameManager.manager.score )
+        }
+
+
+
+
+        //old game over system
 
         //WIN
         if (GameManager.manager.score >= 6)

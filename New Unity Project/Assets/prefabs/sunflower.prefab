@@ -99,6 +99,7 @@ MonoBehaviour:
   insideVase: 0
   isFallingInVase: 0
   stopped: 0
+  flowerPoints: 00000000000000000000000000000000
 --- !u!61 &61571332266046372
 BoxCollider2D:
   m_ObjectHideFlags: 0

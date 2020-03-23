@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MouseControl : MonoBehaviour
 {
     public GameObject dragFlower;
+
     Rigidbody2D rb;
     SpriteRenderer sr;
     public GameObject flowers;
@@ -52,10 +53,6 @@ public class MouseControl : MonoBehaviour
                     buttonUI.flowerLayerCounter += 1;
                     dragFlower.GetComponent<SpriteRenderer>().sortingOrder = buttonUI.flowerLayerCounter;
                 }
-
-
-                
-
 
             }
         }
