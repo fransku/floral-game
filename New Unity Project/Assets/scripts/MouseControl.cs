@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MouseControl : MonoBehaviour
 {
     public GameObject dragFlower;
+   
 
     Rigidbody2D rb;
     SpriteRenderer sr;
